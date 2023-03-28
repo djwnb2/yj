@@ -1,0 +1,4 @@
+﻿  test.c
+M:\yj.c\yj\niuke_3_28\niuke_3_28\test.c(85,35): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+M:\yj.c\yj\niuke_3_28\niuke_3_28\test.c(86,39): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  niuke_3_28.vcxproj -> M:\yj.c\yj\niuke_3_28\Debug\niuke_3_28.exe
