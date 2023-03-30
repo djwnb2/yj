@@ -1,0 +1,3 @@
+﻿  test.c
+M:\yj.c\yj\code_3_30(nowcoder)\code_3_30(nowcoder)\test.c(38,1): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  code_3_30(nowcoder).vcxproj -> M:\yj.c\yj\code_3_30(nowcoder)\Debug\code_3_30(nowcoder).exe
