@@ -3,7 +3,8 @@
 #include <stdio.h>
 int array[1001][1001] = { 0 };
 int main(void)
-{
+{ 
+
     int n = 0;
     scanf("%d", &n);
     int i = 1, j = 1, k = 0, pos = 1; //pos代表方向移动   1代表右上   -1代表左下
@@ -38,7 +39,7 @@ int main(void)
         {
             array[++i][--j] = k;
         }
-    }
+    } 
     for (i = 1; i <= n; i++)
     {
         for (j = 1; j <= n; j++)
