@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
-//BC135 Í¼ÏñÏàËÆ¶È
+ï»¿#define _CRT_SECURE_NO_WARNINGS
+//BC135 å›¾åƒç›¸ä¼¼åº¦
 #include <stdio.h>
 int main()
 {
