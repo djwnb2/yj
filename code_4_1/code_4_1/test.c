@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 //BC136 KiKiÅĞ¶ÏÉÏÈı½Ç¾ØÕó
 #include <stdio.h>
+
 int main()
 {
     int arr[10][10] = { 0 };
