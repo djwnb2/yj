@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<string.h>
-//BC143 [NOIP2018]标题统计
+//BC143 [NOIP2018]锟斤拷锟斤拷统锟斤拷
 
 int main()
 {
