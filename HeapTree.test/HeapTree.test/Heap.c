@@ -48,11 +48,49 @@ void AdjustUp(HPDataType* nums,int child)
 		}
 	}
 }
+bool HeapEmpty(HP* php)
+{
+	assert(php);
+	return php->size == 0;
+}
+void AdjustDown(HPDataType* a, int n, int parent)
+{
+	int child = parent * 2 + 1;
+	while (child<n)
+	{
+		if (a[child] > a[child + 1]&&child+1<n)
+		{
+			++child;
+		}
+		if (a[child] < a[parent])
+		{
+			Swap(&a[child], &a[parent]);
+			parent = child;
+			child = parent * 2 + 1;
+		}
+		else
+		{
+			break;
+		}
+	}
+}
 
-void HeapPop(HP* php);
-bool HeapEmpty(HP* php);
+void HeapPop(HP* php)
+{
+	assert(php);
+	assert(!HeapEmpty(php));
+	Swap(&php->a[0], &php->a[php->size - 1]);
+	php->size--;
+	AdjustDown(php->a, php->size, 0);
+}
 
-void AdjustDown(HPDataType* a, int n, int parent);
+
+HPDataType HeapTop(HP* php)
+{
+	assert(php);
+	assert(!HeapEmpty(php));
+	return php->a[0];
+}
 
 
 void HeapPush(HP* php, HPDataType x)
@@ -74,4 +112,9 @@ void HeapPush(HP* php, HPDataType x)
 	AdjustUp(php->a, php->size - 1);
 	
 }  
-int HeapSize(HP* php);
+int HeapSize(HP* php)
+{
+	assert(php);
+	return php->size;
+
+}
