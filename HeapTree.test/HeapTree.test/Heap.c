@@ -36,7 +36,7 @@ void AdjustUp(HPDataType* nums,int child)
 	int parent = (child - 1) / 2;
 	while (child>0)
 	{
-		if (nums[child] < nums[parent])
+		if (nums[child] > nums[parent])
 		{
 			Swap(&nums[child], &nums[parent]);
 			child = parent;
@@ -62,7 +62,7 @@ void AdjustDown(HPDataType* a, int n, int parent)
 		{
 			++child;
 		}
-		if (a[child] < a[parent])
+		if (a[child] > a[parent])
 		{
 			Swap(&a[child], &a[parent]);
 			parent = child;

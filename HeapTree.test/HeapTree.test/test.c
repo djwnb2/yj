@@ -91,13 +91,182 @@ void HeapDSort(int* a, int n)
 //
 //	return 0;
 //}
+void PrintTopK(const char* file, int k)
+{
+	// 1. 建堆--用a中前k个元素建小堆
+	int* topk = (int*)malloc(sizeof(int) * k);
+	assert(topk);
+
+	FILE* fout = fopen(file, "r");
+	if (fout == NULL)
+	{
+		perror("fopen error");
+		return;
+	}
+
+	// 读出前k个数据建小堆
+	for (int i = 0; i < k; ++i)
+	{
+		fscanf(fout, "%d", &topk[i]);
+	}
+
+	for (int i = (k - 2) / 2; i >= 0; --i)
+	{
+		AdjustDown(topk, k, i);
+	}
+
+	// 2. 将剩余n-k个元素依次与堆顶元素交换，不满则则替换
+	int val = 0;
+	int ret = fscanf(fout, "%d", &val);
+	while (ret != EOF)
+	{
+		if (val > topk[0])
+		{
+			topk[0] = val;
+			AdjustDown(topk, k, 0);
+		}
+
+		ret = fscanf(fout, "%d", &val);
+	}
+
+	for (int i = 0; i < k; i++)
+	{
+		printf("%d ", topk[i]);
+	}
+	printf("\n");
+
+	free(topk);
+	fclose(fout);
+}
+
+void CreateNDate()
+{
+	// 造数据
+	int n = 10000000;
+	srand(time(0));
+	const char* file = "data.txt";
+	FILE* fin = fopen(file, "w");
+	if (fin == NULL)
+	{
+		perror("fopen error");
+		return;
+	}
+
+	for (size_t i = 0; i< n; ++i)
+	{
+		int x = rand() % 10000;
+		fprintf(fin, "%d\n", x);
+	}
+
+	fclose(fin);
+}
+
+//int main()
+//{
+//	//int a[10] = { 2, 1, 5, 7, 6, 8, 0, 9, 4, 3}; // 对数组排序
+//	//HeapSort(a, 10);
+//
+//	//CreateNDate();
+//	PrintTopK("data.txt", 10);
+
+//int main()
+//{
+//	int a[] = { 65,100,70,32,50,60 };
+//	HeapDSort(a, sizeof(a) / sizeof(a[0]));
+//	int i = 0;
+//	for (i = 0; i < sizeof(a) / sizeof(a[0]); i++)
+//	{
+//		printf("%d ", a[i]);
+//	}
+//}
+//}
+
+
+
+typedef int BTDataType;
+typedef struct BinaryTreeNode
+{
+	BTDataType data;
+	struct BinaryTreeNode* left;
+	struct BinaryTreeNode* right;
+}BTNode;
+
+BTNode* BuyNode(BTDataType x)
+{
+	BTNode* newnode = (BTNode*)malloc(sizeof(BTNode));
+	if (newnode == NULL)
+	{
+		perror("malloc fail");
+		return NULL;
+	}
+	newnode->data = x;
+	newnode->left = NULL;
+	newnode->right = NULL;
+	return newnode;
+
+}
+
+
+
+BTNode* CreatTree()
+{
+	BTNode* node1 = BuyNode(1);
+	BTNode* node2 = BuyNode(2);
+	BTNode* node3 = BuyNode(3);
+	BTNode* node4 = BuyNode(4);
+	BTNode* node5 = BuyNode(5);
+	BTNode* node6 = BuyNode(6);
+	
+
+	node1->left = node2;
+	node1->right = node4;
+	node2->left = node3;
+	node4->left = node5;
+	node4->right = node6;
+	
+
+	return node1;
+}
+void PreOrder(BTNode* root)
+{
+	if (root == NULL)
+	{
+		printf("N ");
+		return;
+	}
+	printf("%d ", root->data);
+	PreOrder( root->left);
+	PreOrder(root->right);
+}
+void InOrder(BTNode* root) {
+	if (root == NULL) {
+		printf("N ");
+		return;
+	}
+
+	InOrder(root->left);
+	printf("%d ", root->data);
+	InOrder(root->right);
+}
+void PostOrder(BTNode* root)
+{
+	if (root == NULL)
+	{
+		printf("NULL ");
+		return;
+	}
+
+	PostOrder(root->left);
+	PostOrder(root->right);
+	printf("%d ", root->data);
+}
+
 int main()
 {
-	int a[] = { 65,100,70,32,50,60 };
-	HeapDSort(a, sizeof(a) / sizeof(a[0]));
-	int i = 0;
-	for (i = 0; i < sizeof(a) / sizeof(a[0]); i++)
-	{
-		printf("%d ", a[i]);
-	}
+	
+		BTNode* root = CreatTree();
+		PreOrder(root);
+		printf("\n");
+		InOrder(root);
+		printf("\n");
 }
