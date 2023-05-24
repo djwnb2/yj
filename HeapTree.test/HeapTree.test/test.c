@@ -252,7 +252,7 @@ void PostOrder(BTNode* root)
 {
 	if (root == NULL)
 	{
-		printf("NULL ");
+		printf("N ");
 		return;
 	}
 
@@ -261,12 +261,112 @@ void PostOrder(BTNode* root)
 	printf("%d ", root->data);
 }
 
+//void BTreesize(BTNode*root)
+//{
+//	
+//	if (root == NULL)
+//	{
+//		return;
+//	}
+//	sz++;
+//	BTreesize(root->left);
+//	BTreesize(root->right);
+//
+//
+//}
+int BTreeSize(BTNode* root)
+{
+	return root == NULL ? 0 : BTreeSize(root->left) + BTreeSize(root->right) + 1;
+}
+int BTreeLeafSize(BTNode* root)
+{
+	if (root==NULL)
+	{
+		return 0;
+	}
+	if (root->left == NULL && root->right == NULL)
+	{
+		return 1;
+	}
+	return BTreeLeafSize(root->left) + BTreeLeafSize(root->right);
+}
+int BTreeHigh(BTNode*root)
+{
+	if (root == NULL)
+	{
+		return 0;
+	}
+	int lefthigh = BTreeHigh(root->left);
+	int righthigh = BTreeHigh(root->right);
+	return lefthigh > righthigh ? lefthigh + 1 : righthigh + 1;
+}
+int BinaryTreeLevelKSize(BTNode* root, int k)
+{
+	assert(k > 0);
+	if (root == NULL)
+	{
+		return 0;
+	}
+	if (k == 1)
+	{
+		return 1;
+	}
+	return BinaryTreeLevelKSize(root->left,k-1) 
+		+ BinaryTreeLevelKSize(root->right,k-1);
+
+
+}
+
+BTNode* BinaryTreeFind(BTNode* root, BTDataType x)
+{
+	if (root == NULL)
+	{
+		return NULL;
+	}
+	if (root->data == x)
+	{
+		return root;
+	}
+	BTNode* lefttree = BinaryTreeFind(root->left, x);
+	if (lefttree != NULL)
+	{
+		return lefttree;
+	}
+	BTNode* righttree = BinaryTreeFind(root->right, x);
+	return righttree;
+}
+// 层序遍历
+void BinaryTreeLevelOrder(BTNode* root);
+// 判断二叉树是否是完全二叉树
+int BinaryTreeComplete(BTNode* root);
+
 int main()
 {
 	
 		BTNode* root = CreatTree();
-		PreOrder(root);
+		/*PreOrder(root);
 		printf("\n");
 		InOrder(root);
 		printf("\n");
+		PostOrder(root);
+		printf("\n");
+	int sz=BTreeSize(root);
+		printf("%d\n", sz);
+		 sz = BTreeLeafSize(root);
+		printf("%d\n",sz);
+		sz = BTreeHigh(root);
+		printf("%d\n", sz);
+		sz=BinaryTreeLevelKSize(root, 2);
+		printf("%d\n", sz);*/
+		int targetValue = 3;
+		struct BTNode* result = BinaryTreeFind(root, targetValue);
+
+		// 检查结果
+		if (result != NULL) {
+			printf("Found node with value %d\n", targetValue);
+		}
+		else {
+			printf("Node with value %d not found\n", targetValue);
+		}
+
 }
