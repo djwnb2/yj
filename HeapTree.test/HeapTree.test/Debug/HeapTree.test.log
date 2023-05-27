@@ -1,5 +1,4 @@
 ﻿  test.c
 M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(146,15): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
 M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(155,22): warning C4018: “<”: 有符号/无符号不匹配
-M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(362,1): warning C4133: “初始化”: 从“BTNode *”到“BTNode *”的类型不兼容
   HeapTree.test.vcxproj -> M:\yj.c\yj\HeapTree.test\Debug\HeapTree.test.exe

@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include"Heap.h"
+#include"Queue.h"
 
 void HeapInit(HP* php)
 {

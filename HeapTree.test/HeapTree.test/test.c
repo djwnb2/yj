@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-
+#include"Queue.h"
 #include"Heap.h"
 //int main()
 //{
@@ -336,9 +336,51 @@ BTNode* BinaryTreeFind(BTNode* root, BTDataType x)
 	return righttree;
 }
 // 层序遍历
-void BinaryTreeLevelOrder(BTNode* root);
+void BinaryTreeLevelOrder(BTNode* root)
+{
+	Queue q;
+	QueueInit(&q);
+	if (root)
+	{
+		QueuePush(&q,root);
+	}
+	while (!QueueEmpty(&q))
+	{
+		BTNode* Front = QueueFront(&q);
+		QueuePop(&q);
+		printf("%d ", Front->data);
+		if (Front->left)
+		{
+			QueuePush(&q, Front->left);
+		}
+		if (Front->right)
+		{
+			QueuePush(&q, Front->right);
+		}
+	}
+
+	QueueDestory(&q);
+}
 // 判断二叉树是否是完全二叉树
-int BinaryTreeComplete(BTNode* root);
+bool isComplete(BTNode* node) {
+	if (node == NULL)
+		return true;
+
+	bool isLeftComplete = isComplete(node->left);
+	bool isRightComplete = isComplete(node->right);
+
+	if (!isLeftComplete || !isRightComplete)
+		return false;
+
+	return true;
+}
+
+int BinaryTreeComplete(BTNode* root) {
+	if (isComplete(root))
+		return 1;
+	else
+		return 0;
+}
 
 int main()
 {
@@ -358,15 +400,20 @@ int main()
 		printf("%d\n", sz);
 		sz=BinaryTreeLevelKSize(root, 2);
 		printf("%d\n", sz);*/
-		int targetValue = 3;
-		struct BTNode* result = BinaryTreeFind(root, targetValue);
+		//int targetValue = 3;
+		//struct BTNode* result = BinaryTreeFind(root, targetValue);
 
-		// 检查结果
-		if (result != NULL) {
-			printf("Found node with value %d\n", targetValue);
-		}
-		else {
-			printf("Node with value %d not found\n", targetValue);
-		}
+		//// 检查结果
+		//if (result != NULL) {
+		//	printf("Found node with value %d\n", targetValue);
+		//}
+		//else {
+		//	printf("Node with value %d not found\n", targetValue);
+		//}
+	/*	BinaryTreeLevelOrder(root);*/
+
+		int a=BinaryTreeComplete(root);
+		printf("%d", a);
+
 
 }
