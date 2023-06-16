@@ -1,0 +1,2 @@
+﻿  test.cpp
+M:\yj.c\yj\test_6_17\test_6_17\test.cpp(4,10): fatal error C1083: 无法打开包括文件: “bits/stdc++.h”: No such file or directory
