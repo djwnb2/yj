@@ -381,7 +381,17 @@ int BinaryTreeComplete(BTNode* root) {
 	else
 		return 0;
 }
+void BinaryDestory(BTNode* root)
+{
+	if (root == NULL)
+	{
+		return;
+	}
+	BinaryDestory(root->left);
+	BinaryDestory(root->right);
+	free(root);
 
+}
 int main()
 {
 	
