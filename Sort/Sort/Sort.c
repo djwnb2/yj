@@ -35,15 +35,47 @@ void InsertSort(int* a, int n)
 }
 
 
+//void ShellSort(int* a, int n)
+//{
+//	int gap = 3;
+//	for (int j = 0; j < gap; j++)
+//	{
+//		for (int i = j; i < n - gap; i+=gap)
+//		{
+//
+//			int end = 0;
+//			int tmp = a[end + gap];
+//			while (end >= 0)
+//			{
+//				if (a[end] > tmp)
+//				{
+//					a[end + gap] = a[end];
+//					end -= gap;
+//				}
+//				else
+//				{
+//					break;
+//				}
+//				a[end + gap] = tmp;
+//			}
+//		}
+//		 
+//	}
+//
+//}
 void ShellSort(int* a, int n)
 {
-	int gap = 3;
-	for (int j = 0; j < gap; j++)
-	{
-		for (int i = j; i < n - gap; i+=gap)
-		{
+	// 1、gap > 1 预排序
+	// 2、gap == 1 直接插入排序
 
-			int end = 0;
+	int gap = n;
+	while (gap > 1)
+	{
+		gap = gap / 3 + 1;  // +1可以保证最后一次一定是1
+		// gap = gap / 2;
+		for (int i = 0; i < n - gap; ++i)
+		{
+			int end = i;
 			int tmp = a[end + gap];
 			while (end >= 0)
 			{
@@ -56,13 +88,14 @@ void ShellSort(int* a, int n)
 				{
 					break;
 				}
-				a[end + gap] = tmp;
 			}
-		}
-		 
-	}
 
+			a[end + gap] = tmp;
+		}
+	}
 }
+
+
 
 void HeapSort(int* a, int n);
 void SelectSort(int* a, int n);
