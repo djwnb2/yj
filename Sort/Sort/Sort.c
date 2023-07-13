@@ -172,9 +172,69 @@ void SelectSort(int* a, int n)
 		--end;
 	}
 }
-void BubbleSort(int* a, int n);
+void BubbleSort(int* a, int n)
+{
+	for (int j = 0; j < n; ++j)
+	{
+		bool exchange = false;
+		for (int i = 1; i < n - j; i++)
+		{
+			if (a[i - 1] > a[i])
+			{
+				int tmp = a[i];
+				a[i] = a[i - 1];
+				a[i - 1] = tmp;
+
+				exchange = true;
+			}
+		}
+
+		if (exchange == false)
+		{
+			break;
+		}
+	}
+
+}
+int GetMidIndex(int* a, int left, int right)
+{
+	int mid = (left + right) / 2;
+	if (a[left] < a[mid])
+	{
+		if (a[mid] < a[right])
+		{
+			return mid;
+		}
+		else if (a[left] < a[right])
+		{
+			return right;
+		}
+		else
+		{
+			return left;
+		}
+	}
+	else // a[left] > a[mid]
+	{
+		if (a[mid] > a[right])
+		{
+			return mid;
+		}
+		else if (a[left] > a[right])
+		{
+			return right;
+		}
+		else
+		{
+			return left;
+		}
+	}
+}
+
 int OneSort(int* a, int left, int right)
 {
+	int midi = GetMidIndex(a, left, right);
+	Swap(&a[left], &a[midi]);
 	int keyi = left;
 	while (left < right)
 	{
@@ -194,6 +254,8 @@ int OneSort(int* a, int left, int right)
 }
 int DoubleSort(int* a, int left, int right)
 {
+	int midi = GetMidIndex(a, left, right);
+	Swap(&a[left], &a[midi]);
 	int key = a[left];//·ÅÖµ
 	int hole = left;
 	while (left < right)
@@ -215,7 +277,27 @@ int DoubleSort(int* a, int left, int right)
 	a[hole] = key;
 	return hole;
 }
-  
+ 
+int ThreeSort(int* a, int left, int right)
+{
+	int midi = GetMidIndex(a, left, right);
+	Swap(&a[left], &a[midi]);
+	int prev = left;//Âý
+	int  cur = left + 1;
+	int key = left;
+	while (cur <= right)
+	{
+		if (a[cur] < a[key] && prev++)
+		{
+			Swap(&a[prev], &a[cur]);
+		}
+		cur++;
+	}
+	Swap(&a[prev], &a[key]);
+	key = prev;
+	return key;
+
+ }
 void QuickSort(int* a, int begin, int end)
 {
 	if (begin >= end)
@@ -223,7 +305,8 @@ void QuickSort(int* a, int begin, int end)
 		return;
     }
 	//int keyi = OneSort(a, begin, end);
-	int keyi = DoubleSort(a, begin, end);
+	//int keyi = DoubleSort(a, begin, end);
+	int keyi = ThreeSort(a, begin, end);
 	QuickSort(a, begin, keyi - 1);
 	QuickSort(a, keyi + 1, end);
 }
