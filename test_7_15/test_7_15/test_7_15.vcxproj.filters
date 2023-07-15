@@ -18,19 +18,5 @@
     <ClCompile Include="test.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Sort.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Sort.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Stack.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

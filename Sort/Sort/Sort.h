@@ -11,3 +11,4 @@ void HeapSort(int* a, int n);
 void SelectSort(int* a, int n);
 void BubbleSort(int* a, int n);
 void QuickSort(int* a, int begin, int end);
+void QuickSortNonR(int* a, int begin, int end);
