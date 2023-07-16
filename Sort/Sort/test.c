@@ -90,13 +90,22 @@ void  QuickSortNonR1()
 //	free(a6);
 //}
 
+void  TestMergeSort()
+{
+	//int a[] = { 4,7,1,9,3,6,5,8,3,2,0 };
+	int a[] = { 6,1,2,7,9,3,4,5,10,8 };
+
+
+	QuickSortNonR(a, 0, sizeof(a) / sizeof(int) - 1);
+	PrintArray(a, sizeof(a) / sizeof(int));
+}
 int main()
 {
 	//TestInsertSort();
 	//TestShellSort();
 	//TestBubbleSort();
 	//TestSelectSort();
-	QuickSortNonR1();
+	TestMergeSort();
 
 
 
