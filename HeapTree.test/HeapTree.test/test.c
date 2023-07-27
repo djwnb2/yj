@@ -71,95 +71,26 @@ void HeapDSort(int* a, int n)
 		--end;
 	}
 }
-//int main()
-//{
-//	HP hp;
-//	HeapInit(&hp);
-//	int a[] = { 65,100,70,32,50,60 };
-//	for (int i = 0; i < sizeof(a) / sizeof(int); ++i)
-//	{
-//		HeapPush(&hp, a[i]);
-//	}
-//
-//	// 10:42继续
-//	while (!HeapEmpty(&hp))
-//	{
-//		int top = HeapTop(&hp);
-//		printf("%d\n", top);
-//		HeapPop(&hp);
-//	}
-//
-//	return 0;
+int main()
+{
+	HP hp;
+	HeapInit(&hp);
+	int a[] = { 7,6,4,5,4,1,2 };
+	for (int i = 0; i < sizeof(a) / sizeof(int); ++i)
+	{
+		HeapPush(&hp, a[i]);
+	}
+
+	// 10:42继续
+	while (!HeapEmpty(&hp))
+	{
+		int top = HeapTop(&hp);
+		printf("%d\n", top);
+		HeapPop(&hp);
+	}
+
+	return 0;
 //}
-void PrintTopK(const char* file, int k)
-{
-	// 1. 建堆--用a中前k个元素建小堆
-	int* topk = (int*)malloc(sizeof(int) * k);
-	assert(topk);
-
-	FILE* fout = fopen(file, "r");
-	if (fout == NULL)
-	{
-		perror("fopen error");
-		return;
-	}
-
-	// 读出前k个数据建小堆
-	for (int i = 0; i < k; ++i)
-	{
-		fscanf(fout, "%d", &topk[i]);
-	}
-
-	for (int i = (k - 2) / 2; i >= 0; --i)
-	{
-		AdjustDown(topk, k, i);
-	}
-
-	// 2. 将剩余n-k个元素依次与堆顶元素交换，不满则则替换
-	int val = 0;
-	int ret = fscanf(fout, "%d", &val);
-	while (ret != EOF)
-	{
-		if (val > topk[0])
-		{
-			topk[0] = val;
-			AdjustDown(topk, k, 0);
-		}
-
-		ret = fscanf(fout, "%d", &val);
-	}
-
-	for (int i = 0; i < k; i++)
-	{
-		printf("%d ", topk[i]);
-	}
-	printf("\n");
-
-	free(topk);
-	fclose(fout);
-}
-
-void CreateNDate()
-{
-	// 造数据
-	int n = 10000000;
-	srand(time(0));
-	const char* file = "data.txt";
-	FILE* fin = fopen(file, "w");
-	if (fin == NULL)
-	{
-		perror("fopen error");
-		return;
-	}
-
-	for (size_t i = 0; i< n; ++i)
-	{
-		int x = rand() % 10000;
-		fprintf(fin, "%d\n", x);
-	}
-
-	fclose(fin);
-}
 
 //int main()
 //{
@@ -392,38 +323,38 @@ void BinaryDestory(BTNode* root)
 	free(root);
 
 }
-int main()
-{
-	
-		BTNode* root = CreatTree();
-		/*PreOrder(root);
-		printf("\n");
-		InOrder(root);
-		printf("\n");
-		PostOrder(root);
-		printf("\n");
-	int sz=BTreeSize(root);
-		printf("%d\n", sz);
-		 sz = BTreeLeafSize(root);
-		printf("%d\n",sz);
-		sz = BTreeHigh(root);
-		printf("%d\n", sz);
-		sz=BinaryTreeLevelKSize(root, 2);
-		printf("%d\n", sz);*/
-		//int targetValue = 3;
-		//struct BTNode* result = BinaryTreeFind(root, targetValue);
-
-		//// 检查结果
-		//if (result != NULL) {
-		//	printf("Found node with value %d\n", targetValue);
-		//}
-		//else {
-		//	printf("Node with value %d not found\n", targetValue);
-		//}
-	/*	BinaryTreeLevelOrder(root);*/
-
-		int a=BinaryTreeComplete(root);
-		printf("%d", a);
-
-
-}
+//int main()
+//{
+//	
+//		BTNode* root = CreatTree();
+//		/*PreOrder(root);
+//		printf("\n");
+//		InOrder(root);
+//		printf("\n");
+//		PostOrder(root);
+//		printf("\n");
+//	int sz=BTreeSize(root);
+//		printf("%d\n", sz);
+//		 sz = BTreeLeafSize(root);
+//		printf("%d\n",sz);
+//		sz = BTreeHigh(root);
+//		printf("%d\n", sz);
+//		sz=BinaryTreeLevelKSize(root, 2);
+//		printf("%d\n", sz);*/
+//		//int targetValue = 3;
+//		//struct BTNode* result = BinaryTreeFind(root, targetValue);
+//
+//		//// 检查结果
+//		//if (result != NULL) {
+//		//	printf("Found node with value %d\n", targetValue);
+//		//}
+//		//else {
+//		//	printf("Node with value %d not found\n", targetValue);
+//		//}
+//	/*	BinaryTreeLevelOrder(root);*/
+//
+//		int a=BinaryTreeComplete(root);
+//		printf("%d", a);
+//
+//
+//}

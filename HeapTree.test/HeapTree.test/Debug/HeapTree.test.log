@@ -1,4 +1,136 @@
 ﻿  test.c
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(95,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(97,42): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(100,25): error C2065: “file”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(100,25): warning C4047: “函数”:“const char *”与“int”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(100,21): warning C4024: “fopen”: 形参和实参 1 的类型不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(108,23): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(113,18): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(115,21): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(126,22): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(132,23): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(143,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
 M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(146,15): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
 M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(155,22): warning C4018: “<”: 有符号/无符号不匹配
-  HeapTree.test.vcxproj -> M:\yj.c\yj\HeapTree.test\Debug\HeapTree.test.exe
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(195,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(202,19): error C2065: “x”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(212,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(231,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(232,11): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(232,18): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(237,20): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(237,22): error C2223: “->data”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(237,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(237,9): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(237,9): message : 缺失的可变参数 1 为格式字符串“%d”所需
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(238,16): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(238,18): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(238,10): error C2198: “PreOrder”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(239,15): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(239,17): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(239,10): error C2198: “PreOrder”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(241,28): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(242,11): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(242,18): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(247,14): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(247,16): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(247,9): error C2198: “InOrder”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(248,20): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(248,22): error C2223: “->data”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(248,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(248,9): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(248,9): message : 缺失的可变参数 1 为格式字符串“%d”所需
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(249,14): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(249,16): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(249,9): error C2198: “InOrder”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(252,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(253,11): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(253,18): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(259,16): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(259,18): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(259,11): error C2198: “PostOrder”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(260,16): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(260,18): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(260,11): error C2198: “PostOrder”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(261,20): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(261,22): error C2223: “->data”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(261,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(261,9): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(261,9): message : 缺失的可变参数 1 为格式字符串“%d”所需
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(278,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,14): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,22): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,42): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,44): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,37): error C2198: “BTreeSize”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,66): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,68): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(279,61): error C2198: “BTreeSize”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(282,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(283,10): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(283,16): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(287,10): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(287,12): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(287,32): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(287,34): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(291,27): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(291,29): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(291,22): error C2198: “BTreeLeafSize”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(291,55): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(291,57): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(291,50): error C2198: “BTreeLeafSize”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(294,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(295,11): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(295,18): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(299,31): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(299,33): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(299,26): error C2198: “BTreeHigh”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(300,32): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(300,34): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(300,27): error C2198: “BTreeHigh”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(304,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(305,2): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(306,11): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(306,18): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(310,8): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(314,34): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(314,36): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(314,42): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(314,44): warning C4047: “函数”:“BTNode *”与“int”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(314,42): warning C4024: “BinaryTreeLevelKSize”: 形参和实参 1 的类型不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(314,29): error C2198: “BinaryTreeLevelKSize”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(315,30): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(315,32): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(315,39): error C2065: “k”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(315,41): warning C4047: “函数”:“BTNode *”与“int”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(315,39): warning C4024: “BinaryTreeLevelKSize”: 形参和实参 1 的类型不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(315,25): error C2198: “BinaryTreeLevelKSize”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(321,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(322,11): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(322,18): warning C4047: “==”:“int”与“void *”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(326,10): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(326,12): error C2223: “->data”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(326,21): error C2065: “x”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(328,14): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(330,40): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(330,42): error C2223: “->left”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(330,49): error C2065: “x”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(330,49): warning C4047: “函数”:“BTNode *”与“int”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(330,48): warning C4024: “BinaryTreeFind”: 形参和实参 1 的类型不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(330,35): error C2198: “BinaryTreeFind”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(335,41): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(335,43): error C2223: “->right”的左侧必须指向结构/联合
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(335,51): error C2065: “x”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(335,51): warning C4047: “函数”:“BTNode *”与“int”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(335,50): warning C4024: “BinaryTreeFind”: 形参和实参 1 的类型不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(335,36): error C2198: “BinaryTreeFind”: 用于调用的参数太少
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(340,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(343,10): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(345,20): error C2065: “root”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(345,20): warning C4047: “函数”:“QDataType”与“int”的间接级别不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(345,16): warning C4024: “QueuePush”: 形参和实参 2 的类型不同
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(354,29): warning C4133: “函数”: 从“BinaryTreeNode *”到“QDataType”的类型不兼容
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(358,30): warning C4133: “函数”: 从“BinaryTreeNode *”到“QDataType”的类型不兼容
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(365,31): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(366,11): error C2065: “node”: 未声明的标识符
+M:\yj.c\yj\HeapTree.test\HeapTree.test\test.c(366,11): fatal error C1003: 错误计数超过 100；正在停止编译
