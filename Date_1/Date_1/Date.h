@@ -7,6 +7,8 @@ using namespace std;
 
 class Date
 {
+	friend ostream& operator<<(ostream& out, const Date& d);
+	friend istream& operator>>(istream& in, Date& d);
 public:
 	int GetMonthDay(int year, int month);
 	Date(int year = 1, int month = 1, int day = 1);

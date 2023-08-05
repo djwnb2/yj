@@ -29,8 +29,13 @@ void TestDate6()
 
 	cout << d1 - d2 << endl;
 }
+void TestDate7()
+{
+	Date d1(2023, 7, 1);
+	cout << d1;
+}
 int main()
 {
-	TestDate6();
+	TestDate7();
 	return 0;
 }

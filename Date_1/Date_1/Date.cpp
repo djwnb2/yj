@@ -169,3 +169,15 @@ int Date::operator-(const Date& d)
 	}
 	return n * flag;
 }
+
+ostream& operator<<(ostream& out, const Date& d)
+{
+	 out << d._year << "/" << d._month << "/" << d._day << endl;
+
+	return out;
+ }
+istream& operator>>(istream& in, Date& d)
+{
+	in >> d._year >> d._month >> d._day;
+	return in;
+ }
