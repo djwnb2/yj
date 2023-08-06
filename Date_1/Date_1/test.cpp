@@ -24,9 +24,14 @@ void TestDate5()
 }
 void TestDate6()
 {
-	Date d1(2023, 7, 27);
-	Date d2(2003, 1, 1);
+	/*Date d1(2023, 7, 27);
+	Date d2(2003, 1, 1);*/
 
+	int year1, month1, day1, year2, month2, day2;
+	cin >> year1 >> month1 >> day1;
+	cin >> year2 >> month2 >> day2;
+	Date d1(year1, month1, day1);
+	Date d2(year2, month2, day2);
 	cout << d1 - d2 << endl;
 }
 void TestDate7()
@@ -36,6 +41,6 @@ void TestDate7()
 }
 int main()
 {
-	TestDate7();
+	TestDate6();
 	return 0;
 }
