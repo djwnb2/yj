@@ -1,0 +1,7 @@
+﻿  test.cpp
+M:\yj.c\yj\class_4\class_4\test.cpp(89,10): error C2065: “n”: 未声明的标识符
+M:\yj.c\yj\class_4\class_4\test.cpp(89,22): error C2065: “m”: 未声明的标识符
+M:\yj.c\yj\class_4\class_4\test.cpp(95,10): error C2065: “n”: 未声明的标识符
+M:\yj.c\yj\class_4\class_4\test.cpp(95,22): error C2065: “m”: 未声明的标识符
+M:\yj.c\yj\class_4\class_4\test.cpp(99,10): error C2065: “n”: 未声明的标识符
+M:\yj.c\yj\class_4\class_4\test.cpp(99,22): error C2065: “m”: 未声明的标识符
