@@ -1,0 +1,4 @@
+﻿  test.c
+M:\yj.c\yj\test_7_27\test_7_27\test.c(76,11): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 1 拥有了类型“int”
+M:\yj.c\yj\test_7_27\test_7_27\test.c(76,11): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 2 拥有了类型“int”
+M:\yj.c\yj\test_7_27\test_7_27\test.c(76): error C4700: 使用了未初始化的局部变量“n”
