@@ -395,5 +395,6 @@ void test_vector8()
 	{
 		cout << e << " ";
 	}
-	cout << endl;
+	cout << endl; 
+
 }
