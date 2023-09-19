@@ -1,0 +1,13 @@
+﻿  test.cpp
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(7,9): error C2131: 表达式的计算结果不是常数
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(7,9): message : 非常量参数或对非常量符号的引用导致了故障
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(7,9): message : 请参见“N”的用法
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(7,17): error C2131: 表达式的计算结果不是常数
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(7,17): message : 非常量参数或对非常量符号的引用导致了故障
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(7,17): message : 请参见“N”的用法
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(14,25): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(20,39): error C3863: 不可指定数组类型“int [N]”
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(21,23): error C3863: 不可指定数组类型“int [N]”
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(24,31): error C3863: 不可指定数组类型“int [N]”
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(25,29): error C3863: 不可指定数组类型“int [N]”
+M:\yj.c\yj\test_9_19\test_9_19\test.cpp(38,16): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int [N]”
