@@ -444,5 +444,12 @@ namespace bit
 		cout << s1.size() << endl;
 		cout << s1.capacity() << endl;
 	}
+	void test_string10()
+	{
+		string s1("hello world");
+		s1 += "19";
+		cout << s1 << endl;
+
+	}
 
 }

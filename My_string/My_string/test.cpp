@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	bit::test_string9();
+	bit::test_string10();
 	
 	
 	
