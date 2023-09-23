@@ -1,0 +1,5 @@
+﻿  test.cpp
+M:\yj.c\yj\test_9_23\test_9_23\test.cpp(7,9): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+M:\yj.c\yj\test_9_23\test_9_23\test.cpp(7,5): error C2146: 语法错误: 缺少“;”(在标识符“main”的前面)
+M:\yj.c\yj\test_9_23\test_9_23\test.cpp(8,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+M:\yj.c\yj\test_9_23\test_9_23\test.cpp(8,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
