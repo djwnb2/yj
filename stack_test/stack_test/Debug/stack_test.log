@@ -1,2 +1,2 @@
 ﻿  test.cpp
-  stack_test.vcxproj -> M:\yj.c\yj\stack_test\Debug\stack_test.exe
+M:\yj.c\yj\stack_test\stack_test\test.cpp(27,1): fatal error C1021: 无效的预处理器命令“int”
