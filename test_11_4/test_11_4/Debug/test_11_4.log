@@ -1,0 +1,4 @@
+﻿  test.cpp
+M:\yj.c\yj\test_11_4\test_11_4\test.cpp(18,33): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+M:\yj.c\yj\test_11_4\test_11_4\test.cpp(30,35): warning C4554: “>>”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+  test_11_4.vcxproj -> M:\yj.c\yj\test_11_4\Debug\test_11_4.exe
