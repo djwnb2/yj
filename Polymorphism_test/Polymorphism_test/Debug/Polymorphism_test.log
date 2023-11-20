@@ -1,0 +1,4 @@
+﻿  test.cpp
+M:\yj.c\yj\Polymorphism_test\Polymorphism_test\test.cpp(175,8): warning C4101: “f2”: 未引用的局部变量
+M:\yj.c\yj\Polymorphism_test\Polymorphism_test\test.cpp(174,9): warning C4101: “f1”: 未引用的局部变量
+  Polymorphism_test.vcxproj -> M:\yj.c\yj\Polymorphism_test\Debug\Polymorphism_test.exe
